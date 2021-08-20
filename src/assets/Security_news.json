@@ -1,182 +1,212 @@
 [
   {
     "id": 1,
+    "date": "August 18, 2021",
+    "title": "China Aims Its Propaganda Firehose at the BBC",
+    "description": "The alleged digital operation has deployed hundreds of websites and social media accounts to attack the broadcaster's reporting.",
+    "link": "https://www.wired.com/story/china-aims-its-propaganda-firehose-at-the-bbc/"
+  },
+  {
+    "id": 2,
+    "date": "August 18, 2021",
+    "title": "The T-Mobile Breach Is Much Worse Than It Had to Be",
+    "description": "The vast majority of victims weren’t even T-Mobile customers. Now their information is for sale on the dark web.",
+    "link": "https://www.wired.com/story/t-mobile-breach-much-worse-than-it-had-to-be/"
+  },
+  {
+    "id": 3,
+    "date": "August 17, 2021",
+    "title": "Millions of Web Camera and Baby Monitor Feeds Are Exposed",
+    "description": "A vulnerability in the Kalay platform leaves countless IoT devices susceptible to hackers.",
+    "link": "https://www.wired.com/story/kalay-iot-bug-video-feeds/"
+  },
+  {
+    "id": 4,
+    "date": "August 16, 2021",
+    "title": "The T-Mobile Data Breach Is One You Can’t Ignore",
+    "description": "Hackers claim to have obtained the data of 100 million people—including sensitive personal information.",
+    "link": "https://www.wired.com/story/t-mobile-hack-data-phishing/"
+  },
+  {
+    "id": 5,
+    "date": "August 15, 2021",
+    "title": "How to Send Messages That Automatically Disappear",
+    "description": "Need to be discreet? Here's how to set up vanishing texts, photos, or videos in most popular chat apps.",
+    "link": "https://www.wired.com/story/how-to-send-messages-that-automatically-disappear/"
+  },
+  {
+    "id": 6,
+    "date": "August 14, 2021",
+    "title": "Security News This Week: A Hacker Stole $610M of Cryptocurrency—and Returned Most of It",
+    "description": "Plus: An Apple lawsuit, a VPN audit, and more of the week's top security news.",
+    "link": "https://www.wired.com/story/poly-network-theft-apple-corellium-suit-security-news/"
+  },
+  {
+    "id": 7,
+    "date": "August 12, 2021",
+    "title": "How the Far Right Exploded on Steam and Discord",
+    "description": "New research found that several of the major gaming platforms are hosting extremist activity, from racist livestreams to open support for neo-Nazis.",
+    "link": "https://www.wired.com/story/far-right-took-over-steam-discord/"
+  },
+  {
+    "id": 8,
+    "date": "August 12, 2021",
+    "title": "A Simple Software Fix Could Limit Location Data Sharing",
+    "description": "Carriers know where you are every time your phone reconnects to the cell network—but with Pretty Good Phone Privacy, they wouldn’t have to.",
+    "link": "https://www.wired.com/story/pretty-good-phone-privacy-imsi-wireless-carriers/"
+  },
+  {
+    "id": 9,
+    "date": "August 10, 2021",
+    "title": "A 5G Shortcut Leaves Phones Exposed to Stingray Surveillance",
+    "description": "You may not have the full story about what network you're on—and how well you're protected.",
+    "link": "https://www.wired.com/story/5g-network-stingray-surveillance-non-standalone/"
+  },
+  {
+    "id": 10,
+    "date": "August 10, 2021",
+    "title": "The NYPD Had a Secret Fund for Surveillance Tools",
+    "description": "Documents reveal that police bought facial-recognition software, vans equipped with x-ray machines, and “stingray” cell site simulators—with no public oversight.",
+    "link": "https://www.wired.com/story/nypd-secret-fund-surveillance-tools/"
+  },
+  {
+    "id": 1,
+    "date": "August 8, 2021",
+    "title": "What You Should Know About the Google Play Store Changes",
+    "description": "With the first updates kicking in this month, Android apps should be more streamlined and lightweight. Google is also getting a greater level of control.",
+    "link": "https://www.wired.com/story/google-app-play-store-changes-apk-aab/"
+  },
+  {
+    "id": 2,
+    "date": "August 7, 2021",
+    "title": "Security News This Week: Microsoft Edge’s ‘Super Duper Secure Mode’ Does What It Says",
+    "description": "Plus: Facebook account hacks, Instagram-ban scammers, and more of the week’s top security news.",
+    "link": "https://www.wired.com/story/microsoft-edge-super-duper-secure-mode-facebook-instagram-hacks-bans-security-new/"
+  },
+  {
+    "id": 3,
+    "date": "August 7, 2021",
+    "title": "AI Wrote Better Phishing Emails Than Humans in a Recent Test",
+    "description": "Researchers found that tools like OpenAI's GPT-3 helped craft devilishly effective spearphishing messages.",
+    "link": "https://www.wired.com/story/ai-phishing-emails/"
+  },
+  {
+    "id": 4,
+    "date": "August 7, 2021",
+    "title": "All the Ways Spotify Tracks You—and How to Stop It",
+    "description": "Whether you're listening to workout music or a \"cooking dinner\" playlist, the app can show you ads based on your mood and what you're doing right now.",
+    "link": "https://www.wired.com/story/spotify-tracking-how-to-stop-it/"
+  },
+  {
+    "id": 5,
+    "date": "August 5, 2021",
+    "title": "Messaging Apps Have an Eavesdropping Problem",
+    "description": "Vulnerabilities in Signal, Facebook Messenger, Google Duo, and more all point to a pervasive privacy issue.",
+    "link": "https://www.wired.com/story/signal-facebook-messenger-eavesdropping-vulnerabilities/"
+  },
+  {
+    "id": 6,
+    "date": "August 5, 2021",
+    "title": "Apple Walks a Privacy Tightrope to Spot Child Abuse in iCloud",
+    "description": "With a new capability to search for illegal material not just in the cloud but on user devices, the company may have opened up a new front in the encryption wars.",
+    "link": "https://www.wired.com/story/apple-csam-detection-icloud-photos-encryption-privacy/"
+  },
+  {
+    "id": 7,
     "date": "August 4, 2021",
     "title": "Watch a Hacker Hijack a Capsule Hotel’s Lights, Fans, and Beds",
+    "description": "It’s not a ghost. It’s a half-dozen vulnerabilities in a digital automation system.",
     "link": "https://www.wired.com/story/capsule-hotel-hack-lights-fan-bed/"
   },
   {
-    "id": 2,
+    "id": 8,
     "date": "August 3, 2021",
     "title": "Citizen's New Service Helps Paying Users Summon the Cops",
+    "description": "The crime-tracking app is charging $20 per month to give subscribers access to their own virtual security service.",
     "link": "https://www.wired.com/story/citizen-protect-subscription/"
   },
   {
-    "id": 3,
+    "id": 9,
     "date": "August 3, 2021",
     "title": "France Cracked Down on Google’s Ad Tech. What’s Next?",
+    "description": "The French Competition Agency has hit the company with $855 million in fines this year. The money is meaningless—but the changes could be profound.",
     "link": "https://www.wired.com/story/france-google-ad-tech/"
   },
   {
-    "id": 4,
+    "id": 10,
     "date": "August 2, 2021",
     "title": "Hospitals Still Use Pneumatic Tubes—and They Can Be Hacked",
+    "description": "The tech may seem antiquated, but it poses very modern cybersecurity problems.",
     "link": "https://www.wired.com/story/pneumatic-tubes-hospitals-hacking/"
   },
   {
-    "id": 5,
+    "id": 1,
     "date": "August 1, 2021",
     "title": "A Guide to RCS, and Why It Makes Texting So Much Better",
+    "description": "Google is pushing the new standard for Android devices, which promises better security and cooler features than plain old SMS.",
     "link": "https://www.wired.com/story/guide-to-rcs-why-it-makes-texting-better/"
   },
   {
-    "id": 6,
+    "id": 2,
     "date": "July 31, 2021",
     "title": "Security News This Week: The Top 30 Vulnerabilities Include Plenty of Usual Suspects",
+    "description": "Plus: A sneaky iOS app, a wiper attack in Iran, and more of the week’s top security news.",
     "link": "https://www.wired.com/story/top-vulnerabilities-russia-nso-group-iran-security-news/"
   },
   {
-    "id": 7,
+    "id": 3,
     "date": "July 30, 2021",
     "title": "The Privacy Battle That Apple Isn’t Fighting",
+    "description": "California has begun enforcing a browser-level privacy setting, but you still can’t find that option in Safari or iOS.",
     "link": "https://www.wired.com/story/global-privacy-control-apple/"
   },
   {
-    "id": 8,
+    "id": 4,
     "date": "July 29, 2021",
     "title": "Phantom Warships Are Courting Chaos in Conflict Zones",
+    "description": "The latest weapons in the global information war are fake vessels behaving badly.",
     "link": "https://www.wired.com/story/fake-warships-ais-signals-russia-crimea/"
   },
   {
-    "id": 9,
+    "id": 5,
     "date": "July 27, 2021",
     "title": "A Controversial Tool Calls Out Thousands of Hackable Websites",
+    "description": "PunkSpider is back, and crawling hundreds of millions of sites for vulnerabilities.",
     "link": "https://www.wired.com/story/punkspider-web-site-vulnerabilities/"
   },
   {
-    "id": 10,
+    "id": 6,
     "date": "July 27, 2021",
     "title": "The Shapeshifting Cam Girl Rewriting the Rules of Digital Porn",
+    "description": "Face-morphing adult content creator Coconut Kitty is ushering in the unsettling future of the medium, one where nothing is as it seems.",
     "link": "https://www.wired.com/story/cam-girl-face-morph-digital-porn/"
   },
   {
-    "id": 1,
+    "id": 7,
     "date": "July 24, 2021",
     "title": "Security News This Week: Porn Showed Up on Legit News Sites Thanks to Internet Rot",
+    "description": "Plus: China's pipeline probing, a Chromebook debacle, and more of the week's top security news.",
     "link": "https://www.wired.com/story/porn-vidme-player-china-twitter-chromebooks-security-news/"
   },
   {
-    "id": 2,
+    "id": 8,
     "date": "July 22, 2021",
     "title": "The Kaseya Ransomware Nightmare Is Almost Over",
+    "description": "A decryption tool has emerged, meaning any victims whose systems remain locked up can soon breathe easy.",
     "link": "https://www.wired.com/story/kaseya-ransomware-nightmare-is-almost-over/"
   },
   {
-    "id": 3,
+    "id": 9,
     "date": "July 22, 2021",
     "title": "An Explosive Spyware Report Shows the Limits of iOS Security",
+    "description": "Amnesty International sheds alarming light on an NSO Group surveillance tool—and the gaps in Apple’s and Google's defenses.",
     "link": "https://www.wired.com/story/nso-group-hacks-ios-android-observability/"
   },
   {
-    "id": 4,
+    "id": 10,
     "date": "July 21, 2021",
     "title": "Venmo Gets More Private—but It's Still Not Fully Safe",
+    "description": "Eliminating the global feed is a good step. But until the platform offers privacy by default, it remains a liability for many of its users.",
     "link": "https://www.wired.com/story/venmo-privacy-by-default-global-feed/"
-  },
-  {
-    "id": 5,
-    "date": "July 19, 2021",
-    "title": "How China’s Hacking Entered a Reckless New Phase",
-    "link": "https://www.wired.com/story/china-hacking-reckless-new-phase/"
-  },
-  {
-    "id": 6,
-    "date": "July 17, 2021",
-    "title": "Security News This Week: Biden Puts a $10M Bounty on Foreign Hackers",
-    "link": "https://www.wired.com/story/bounty-hackers-russia-revil-ransomware-china-firewall-security-news/"
-  },
-  {
-    "id": 7,
-    "date": "July 17, 2021",
-    "title": "Biden’s Cybersecurity Team Gets Crowded at the Top",
-    "link": "https://www.wired.com/story/biden-cybersecurity-inglis-easterly-cisa-nsa/"
-  },
-  {
-    "id": 8,
-    "date": "July 16, 2021",
-    "title": "Hackers Got Past Windows Hello by Tricking a Webcam",
-    "link": "https://www.wired.com/story/windows-hello-facial-recognition-bypass/"
-  },
-  {
-    "id": 9,
-    "date": "July 15, 2021",
-    "title": "The SolarWinds Hackers Used an iOS Flaw to Compromise iPhones",
-    "link": "https://www.wired.com/story/solarwinds-hackers-used-ios-zeroday-compromise-iphones/"
-  },
-  {
-    "id": 10,
-    "date": "July 15, 2021",
-    "title": "Facebook Catches Iranian Spies Catfishing US Military Targets",
-    "link": "https://www.wired.com/story/facebook-iran-espionage-catfishing-us-military/"
-  },
-  {
-    "id": 1,
-    "date": "July 14, 2021",
-    "title": "WhatsApp Has a Secure Fix for One of Its Biggest Drawbacks",
-    "link": "https://www.wired.com/story/whatsapp-multiple-device-support/"
-  },
-  {
-    "id": 2,
-    "date": "July 14, 2021",
-    "title": "Germany Is About to Block One of the Biggest Porn Sites",
-    "link": "https://www.wired.com/story/germany-porn-sites-age-checks/"
-  },
-  {
-    "id": 3,
-    "date": "July 13, 2021",
-    "title": "Cuba’s Social Media Blackout Reflects an Alarming New Normal",
-    "link": "https://www.wired.com/story/cuba-social-media-blackout/"
-  },
-  {
-    "id": 4,
-    "date": "July 12, 2021",
-    "title": "Beyond Kaseya: Everyday IT Tools Can Offer ‘God Mode’ for Hackers",
-    "link": "https://www.wired.com/story/it-management-tools-hacking-jamf-kaseya/"
-  },
-  {
-    "id": 5,
-    "date": "July 11, 2021",
-    "title": "How to Make Your Web Searches More Secure and Private",
-    "link": "https://www.wired.com/story/how-to-make-web-searches-secure-private/"
-  },
-  {
-    "id": 6,
-    "date": "July 10, 2021",
-    "title": "A New System Is Helping Crack Down on Child Sex Abuse Images",
-    "link": "https://www.wired.com/story/new-system-crack-down-child-sex-abuse-images/"
-  },
-  {
-    "id": 7,
-    "date": "July 10, 2021",
-    "title": "Security News This Week: The Latest Pro-Trump Twitter Clone Leaks User Data on Day 1",
-    "link": "https://www.wired.com/story/security-news-pro-trump-twitter-clone-gettr-leaks-user-data/"
-  },
-  {
-    "id": 8,
-    "date": "July 9, 2021",
-    "title": "An Office Phone Flaw Can’t Be Fixed by Cisco Alone",
-    "link": "https://www.wired.com/story/office-phone-flaw-cant-be-fixed-by-cisco-alone/"
-  },
-  {
-    "id": 9,
-    "date": "July 9, 2021",
-    "title": "Europe Makes the Case to Ban Biometric Surveillance",
-    "link": "https://www.wired.com/story/europe-ban-biometric-surveillance/"
-  },
-  {
-    "id": 10,
-    "date": "July 8, 2021",
-    "title": "Microsoft Keeps Failing to Patch the Critical ‘PrintNightmare’ Bug",
-    "link": "https://www.wired.com/story/microsoft-keeps-failing-patch-windows-printnightmare-bug/"
   }
 ]

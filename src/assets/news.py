@@ -14,12 +14,14 @@ def parse_itnews(itnews_headline, itnews, i):
             a_inx=1 #img 태그가 있으면 1번째 a 태그의 정보를 사용
             
         title=news.find_all("a")[a_inx].get_text().strip()
+        description=news.find("dd").find("span","lede").get_text().strip()
         link= news.find_all("a")[a_inx]["href"]
         print("{}. {}".format(index+1,title))
+        print("{}".format(description))
         print("  (링크 : {})".format(link))
         #result={"{}. {}".format(index+1,title)," (링크 : {})".format(link)}
 
-        result={"date":i,f"title{[index+1]}":title,"link":link}
+        result={"id": index+1,"date":datetime.strptime(str(i),'%Y%m%d').strftime('%Y-%m-%d'), "title":title,"description":description,"link":link}
         result_array.append(result)
 
     if itnews == None:
@@ -33,12 +35,14 @@ def parse_itnews(itnews_headline, itnews, i):
             a_inx=1 #img 태그가 있으면 1번째 a 태그의 정보를 사용
             
         title=news.find_all("a")[a_inx].get_text().strip()
+        description=news.find("dd").find("span","lede").get_text().strip()
         link= news.find_all("a")[a_inx]["href"]
         print("{}. {}".format(index+11,title))
+        print("{}".format(description))
         print("  (링크 : {})".format(link))
         #result={"{}. {}".format(index+1,title)," (링크 : {})".format(link)}
 
-        result={"date":i,f"title{[index+11]}":title,"link":link}
+        result={"id": index+11,"date":datetime.strptime(str(i),'%Y%m%d').strftime('%Y-%m-%d'), "title":title, "description":description, "link":link}
         result_array.append(result)
 
     return result_array
@@ -64,6 +68,7 @@ def naver_news():
 
             itnews_headline=soup.find('ul',attrs={'class':'type06_headline'}).find_all('li')
             itnews=soup.find('ul',attrs={'class':'type06'})
+            itnews_span_tag=soup.find('span',attrs={'class':'lede'})
             if itnews != None:
                 itnews = itnews.find_all('li')
 
@@ -84,12 +89,26 @@ def naver_news():
                     pagenum=pagenum+1
                     break
 
+
+            # itnews_span_tag=soup.find('span',attrs={'class':'lede'})
+            # if itnews_span_tag==None:
+            #     break
+            # status=False
+
+            # for page in itnews_span_tag:
+            #     number=int(page.get_text())
+            #     if number > pagenum:
+            #         status = True
+            #         pagenum=pagenum+1
+            #         break
+
             if status:
                 continue
             else:
                 break
 
-
+            
+            
             # itnews_a_tag를 for문 돌려서 모든 a태그의 내용(페이지 숫자)을 보면서
             # pagenum 보다 큰 게 있으면 -> pagenum 업데이트 하고 continue
 

@@ -8,15 +8,15 @@ Vue.use(Router);
 
 export default new Router({
   routes: [
-    {
-      // Homepage
-      path: '/',
-      name: 'Header',
-      component: Header
-    },
+    // {
+    //   // Homepage
+    //   path: '/',
+    //   name: 'Header',
+    //   component: Header
+    // },
     {
       // Publisher List
-      path: '/publisher',
+      path: '/',
       name: 'Publisher',
       components: {
         default: Publisher,

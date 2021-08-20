@@ -26,12 +26,14 @@ def security_news():
     for index, news in enumerate(itnews):
       news_date = news.find('div', attrs = {'archive-item-component__byline'}).find('time').get_text()
       title = news.find('h2', attrs = {'archive-item-component__title'}).get_text().strip()
+      description=news.find('p',attrs={'archive-item-component__desc'}).get_text().strip()
       link = 'https://www.wired.com' + news.find('a', attrs = {'archive-item-component__link'})['href']
       print(index+1)
       print(news_date)
       print(title)
+      print(description)
       print(link)
-      result={"date":news_date, "id": index, "title":title,"링크":link}
+      result={"id": index+1, "date":news_date, "title":title, "description":description, "link":link}
       result_array.append(result)
     print()
     
