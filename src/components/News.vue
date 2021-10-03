@@ -1,15 +1,78 @@
+<template>
+  <v-container grid-list-md>
+    <v-row >
+      <v-col cols="12" sm="6">
+        <v-card v-for="data in news" v-bind:key="data.date">
+          <v-card-title>
+          <div>{{data.date}}</div>
+          </v-card-title>
+          <v-card-text class="font-weight-bold ">{{data.title}}</v-card-text>
+          <v-card-text class="font-weight-light">{{data.description}}</v-card-text>
+          <v-card-actions>
+            <v-btn  text color="teal accent-4" @click="reveal = true " :href="data.link">
+            Read More </v-btn></v-card-actions>
+            <!-- <a :href="data.link">{{data.link}}</a></v-card-actions> -->
+        </v-card>
+        
+      </v-col>
+        <v-col cols="12" sm="6">
+         <v-card v-for="data in news2" v-bind:key="data.date">
+          <v-card-title>
+          <div>{{data.date}}</div>
+          </v-card-title>
+          <v-card-text class="font-weight-bold">{{data.title}}</v-card-text>
+          <v-card-text class="font-weight-light">{{data.description}}</v-card-text>
+          <v-card-actions>
+            <v-btn  text color="teal accent-4" @click="reveal = true " :href="data.link">
+            Read More </v-btn></v-card-actions>
+            <!-- <a :href="data.link">{{data.link}}</a></v-card-actions> -->
+        </v-card>
+      </v-col>
+    </v-row>
+    
+  </v-container>
+
+</template>
+
+
 <script>
-import Publisher from "../assets/news.json"
-
-export const actions = {
-  Publisher({commit}){
-    this.$axios.get('../assets/news.json').then(c=>{
-      commit('News',c.data);
-    });
-  }
+// axios
+import api from '@/api'
 
 
-  }
+export default {
+  data() {
+    return{
+      news: [], //처음에 빈 배열 (naver)
+      news2: [] //처음에 빈 배열 (security)
+    }
+  },
+  
+  methods: {
+    getMydata(){
+      api.get('/security_news').then(res => {
+        this.news2 = res.data; // news2 데이터 받아옴.
+      }).catch((error)=>{
+        console.error(error);
+      });
+    },
+  },
+  created() {
+    this.getMydata();
+  },
+}
 
+
+
+
+
+
+// export const actions = {
+//   axios({commit}){
+//     this.$axios.get('http://127.0.0.1:5000/security_news'.format(path)).then(res=>{
+//       this.security_news=res.data;
+//       //commit('News',c.data);
+//     });
+ 
 
 </script>

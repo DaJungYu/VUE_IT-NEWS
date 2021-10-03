@@ -24,10 +24,19 @@ export default new Router({
       }
     },
     {
-      // Display selected publisher news
-      path: '/news/:id',
+      // News List
+      path: '/News',
       name: 'News',
-      component: News
-    }
+      components: {
+        default: News,
+
+      }
+    },
+    // {
+    //   // Display selected publisher news
+    //   path: '/news/:id',
+    //   name: 'News',
+    //   component: News
+    // }
   ]
 });
