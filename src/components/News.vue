@@ -2,7 +2,7 @@
   <v-container grid-list-md>
     <v-row >
       <v-col cols="12" sm="6">
-        <v-card v-for="data in news" v-bind:key="data.date">
+        <v-card v-for="data in news" v-bind:key="data.id">
           <v-card-title>
           <div>{{data.date}}</div>
           </v-card-title>
@@ -16,7 +16,7 @@
         
       </v-col>
         <v-col cols="12" sm="6">
-         <v-card v-for="data in news2" v-bind:key="data.date">
+         <v-card v-for="data in news2" v-bind:key="data.id">
           <v-card-title>
           <div>{{data.date}}</div>
           </v-card-title>
@@ -43,14 +43,21 @@ import api from '@/api'
 export default {
   data() {
     return{
-      news: [], //처음에 빈 배열 (naver)
-      news2: [] //처음에 빈 배열 (security)
+      news: [], //처음에 빈 배열 (security)
+      news2: [] //처음에 빈 배열 (naver)
     }
   },
   
   methods: {
     getMydata(){
       api.get('/security_news').then(res => {
+        this.news = res.data; // news2 데이터 받아옴.
+      }).catch((error)=>{
+        console.error(error);
+      });
+    },
+    getMydata2(){
+      api.get('/naver_news').then(res => {
         this.news2 = res.data; // news2 데이터 받아옴.
       }).catch((error)=>{
         console.error(error);
@@ -59,6 +66,7 @@ export default {
   },
   created() {
     this.getMydata();
+    this.getMydata2();
   },
 }
 
