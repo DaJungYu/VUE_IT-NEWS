@@ -1,12 +1,16 @@
 <template>
   <v-container grid-list-md>
     <v-row >
-      <v-col cols="12" sm="6">
+      <!--Security_News-->
+      <v-col cols="12" sm="6"> 
         <v-card v-for="data in news" v-bind:key="data.id">
-          <v-card-title>
-          <div>{{data.date}}</div>
-          </v-card-title>
-          <v-card-text class="font-weight-bold ">{{data.title}}</v-card-text>
+          <v-img v-bind:src="`/static/image_sec/${data.id}.jpg`" height="200px" align="left"  class="white--text align-end">
+            <v-card-text class="font-weight-bold ">{{data.date}}</v-card-text>
+            </v-img>
+          
+          <v-card-text class="text-h6 font-weight-bold " color="black">{{data.title}}</v-card-text>
+          <!--
+          <v-img :src="'/D:\해킹스터디\프로젝트\flask\crawling\image_sec' + data.id"></v-img>-->
           <v-card-text class="font-weight-light">{{data.description}}</v-card-text>
           <v-card-actions>
             <v-btn  text color="teal accent-4" @click="reveal = true " :href="data.link">
@@ -15,15 +19,16 @@
         </v-card>
         
       </v-col>
+      <!--Naver_News-->
         <v-col cols="12" sm="6">
          <v-card v-for="data in news2" v-bind:key="data.id">
-          <v-card-title>
-          <div>{{data.date}}</div>
-          </v-card-title>
-          <v-card-text class="font-weight-bold">{{data.title}}</v-card-text>
+          <v-img v-bind:src="data.image" height="200px" align="left"  class="white--text align-end">{{data.image}}
+            <v-card-text class="font-weight-bold ">{{data.date}}</v-card-text>
+            </v-img>
+          <v-card-text class="text-h6 font-weight-bold">{{data.title}}</v-card-text>
           <v-card-text class="font-weight-light">{{data.description}}</v-card-text>
           <v-card-actions>
-            <v-btn  text color="teal accent-4" @click="reveal = true " :href="data.link">
+            <v-btn  text color="orange lighten-2" @click="reveal = true " :href="data.link">
             Read More </v-btn></v-card-actions>
             <!-- <a :href="data.link">{{data.link}}</a></v-card-actions> -->
         </v-card>
@@ -49,9 +54,9 @@ export default {
   },
   
   methods: {
-    getMydata(){
+    getMydata(){ 
       api.get('/security_news').then(res => {
-        this.news = res.data; // news2 데이터 받아옴.
+        this.news = res.data; // news 데이터 받아옴.
       }).catch((error)=>{
         console.error(error);
       });
@@ -69,11 +74,6 @@ export default {
     this.getMydata2();
   },
 }
-
-
-
-
-
 
 // export const actions = {
 //   axios({commit}){
