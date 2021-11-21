@@ -17,9 +17,9 @@ export default new Router({
     {
       // Publisher List
       path: '/',
-      name: 'Publisher',
+      name: 'News',
       components: {
-        default: Publisher,
+        default: News,
 
       }
     },
