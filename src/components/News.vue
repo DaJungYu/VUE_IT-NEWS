@@ -4,9 +4,10 @@
       <!--Security_News-->
       <v-col cols="12" sm="6"> 
         <v-card v-for="data in news" v-bind:key="data.id">
-          <v-img v-bind:src="`/static/image_sec/${data.id}.jpg`" height="200px" align="left"  class="white--text align-end">
+          <v-img v-bind:src="data.image" height="200px" align="left"  class="white--text align-end">
+          <!--<v-img v-bind:src="`../static/image_sec/${data.id}.jpg`" height="200px" align="left"  class="white--text align-end">-->
             <v-card-text class="font-weight-bold ">{{data.date}}</v-card-text>
-            </v-img>
+          </v-img>
           
           <v-card-text class="text-h6 font-weight-bold " color="black">{{data.title}}</v-card-text>
           <!--
@@ -22,7 +23,7 @@
       <!--Naver_News-->
         <v-col cols="12" sm="6">
          <v-card v-for="data in news2" v-bind:key="data.id">
-          <v-img v-bind:src="data.image" height="200px" align="left"  class="white--text align-end">{{data.image}}
+          <v-img v-bind:src="data.image" height="200px" align="left"  class="white--text align-end">
             <v-card-text class="font-weight-bold ">{{data.date}}</v-card-text>
             </v-img>
           <v-card-text class="text-h6 font-weight-bold">{{data.title}}</v-card-text>
